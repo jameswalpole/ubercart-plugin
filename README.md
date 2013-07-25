@@ -30,8 +30,8 @@ Configuration
 
 Usage
 =====
-When a shopper chooses the Bitcoin payment method, they will be presented with an order summary as the next step (prices are shown in whatever currency they've selected for shopping).
++ When a shopper chooses the Bitcoin payment method, they will be presented with an order summary as the next step (prices are shown in whatever currency they've selected for shopping).
 
-Here, the shopper can either pay to the one-time-use address given, scan the QR code to pay, or use the Pay With Bitcoin button if they're using a URI-compatible wallet.
++ Here, the shopper can either pay to the one-time-use address given, scan the QR code to pay, or use the Pay With Bitcoin button if they're using a URI-compatible wallet.
 
 Note: This extension does not provide a means of automatically pulling a current BTC exchange rate for presenting BTC prices to shoppers.©2012 Warehouse Guitar Speakers.
