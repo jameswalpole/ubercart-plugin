@@ -1,13 +1,13 @@
 Drupal 6.x Ubercart 2.x Plugin
 ==============================
 
-(c) 2011-2014 BITPAY, INC. 
+<strong>(c) 2011-2014 BITPAY, INC.</strong>
 
 Permission is hereby granted to any person obtaining a copy of this software and associated documentation for use and/or modification in association with the bitpay.com service.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Bitcoin payment module using the bitpay.com service.
+Bitcoin payment module for Ubercart 2.x using the bitpay.com service.
 
 Installation
 ============
@@ -27,7 +27,7 @@ Configuration
 
 + Enter your API Key under the Administrator settings dropdown menu, and enter other settings as desired.
 
-+ Select a transaction speed under General settings. The **high** speed will send a confirmation as soon as a transaction is received in the bitcoin network (usually a few seconds). A **medium** speed setting will typically take 10 minutes. The **low** speed setting usually takes around 1 hour. See the bitpay.com merchant documentation for a full description of the transaction speed settings.
++ Select a transaction speed under General settings. The **high** speed will send a confirmation as soon as a transaction is received in the bitcoin network (usually a few seconds). A **medium** speed setting will typically take 10 minutes. The **low** speed setting usually takes around 1 hour. See the bitpay.com merchant documentation for a full description of the transaction speed settings: https://bitpay.com/downloads/bitpayApi.pdf
 
 Usage
 =====
@@ -36,3 +36,11 @@ Usage
 + Here, the shopper can either pay to the one-time-use address given, scan the QR code to pay, or use the Pay With Bitcoin button if they're using a URI-compatible wallet.
 
 **Note:** This extension does not provide a means of automatically pulling a current BTC exchange rate for presenting BTC prices to shoppers.
+
+Version
+=======
+Version 1.1
+- Added new HTTP header for version tracking
+
+Version 1.0
+- Initial release
