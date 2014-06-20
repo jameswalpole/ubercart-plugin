@@ -41,6 +41,7 @@ Version
 =======
 Version 1.1
 - Added new HTTP header for version tracking
+- Tested against Drupal 6.31 and Ubercart 2.13
 
 Version 1.0
 - Initial release
