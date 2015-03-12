@@ -6,7 +6,7 @@ You must have a BitPay merchant account to use this plugin.  It's free to [sign-
 
 ## Installation
 
-* Copy these files into sites/all/modules/ in your Drupal directory.
+Copy these files into sites/all/modules/ in your Drupal directory.
 
 ## Configuration
 
