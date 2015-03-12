@@ -28,6 +28,6 @@ Copy these files into sites/all/modules/ in your Drupal directory.
 
 When a client chooses the BitPay payment method, they will be presented with an invoice showing a button they will have to click on in order to pay their order.  Upon requesting to pay their order, the system takes the client to a full-screen bitpay.com invoice page where the client is presented with payment instructions.  Once payment is received, a link is presented to the shopper that will return them to your website.
 
-**NOTE:** Don't worry!  A payment will automatically update your Ubercart store whether or not the customer returns to your website after they've paid the invoice.
+**Note:** Don't worry!  A payment will automatically update your Ubercart store whether or not the customer returns to your website after they've paid the invoice.
 
 **Note:** This extension does not provide a means of automatically pulling a current BTC exchange rate for presenting BTC prices to shoppers.
