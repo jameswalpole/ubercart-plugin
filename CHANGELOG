@@ -1,6 +1,6 @@
 1.1
-	* Added new HTTP header for version tracking
-	* Tested against Drupal 6.31 and Ubercart 2.13
+  * Added new HTTP header for version tracking
+  * Tested against Drupal 6.31 and Ubercart 2.13
 
 1.0
-	* Initial release
+  * Initial release
