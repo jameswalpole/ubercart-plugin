@@ -10,29 +10,24 @@ You must have a BitPay merchant account to use this plugin.  It's free to [sign-
 
 ## Configuration
 
-* Create an API key at https://bitpay.com by clicking My Account > API Access
-  Keys > Add New API Key.
-* Under Administer > Site Building > Modules, verify that the Bitpay module is
-  enabled under the Ubercart - payment section.
-* Under Store Administration > Configuration > Payment Settings > Payment Methods,
-  enable the Bitpay payment method, and then go to the Bitpay settings menu.
-* Enter your API Key under the Administrator settings dropdown menu, and enter
-  other settings as desired.
-* Select a transaction speed under General settings. The **high** speed will send
-  a confirmation as soon as a transaction is received in the bitcoin network
-  (usually a few seconds). A **medium** speed setting will typically take 10
-  minutes. The **low** speed setting usually takes around 1 hour. See the
-  bitpay.com merchant documentation for a full description of the transaction
-  speed settings: https://bitpay.com/downloads/bitpayApi.pdf
+1. Create "Legacy API Key" in your BitPay merchant account dashboard:
+  * Log into https://bitpay.com with your account username/password.
+  * On the left side of the screen, choose **Settings**.
+  * The menu will expand downward revealing a list of options. Choose the **Legacy API Keys** option.
+  * On the right side of the page, click on the grey **+ Add New API Key** button to instantly create a new one.
+  * Select and copy the entire string for the new API Key ID that you just created. It will look something like this: 43rp4rpa24d6Bz4BR44j8zL44PrU4npVv4DtJA4Kb8.
+2. Now, log into your Ubercart administration area and go to **Administer > Site Building > Modules** to verify that the BitPay module is enabled under the **Ubercart - payment** section.
+3. Under **Store Administration > Configuration > Payment Settings > Payment Methods**, enable the **BitPay** payment method, and then go to the BitPay settings menu.
+4. Enter your Legacy API Key that you created & copied in Step 2 of these directions under the **Administrator** settings dropdown menu, and enter other settings as desired.
+5. Select a transaction speed under General settings. This setting determines how quickly you will receive a payment confirmation from BitPay after an invoice is paid by a customer.
+  * High: A confirmation is sent instantly once the payment has been received by the gateway.
+  * Medium: A confirmation is sent after 1 block confirmation (~10 mins) by the bitcoin network.
+  * Low: A confirmation is sent after the usual 6 block confirmations (~1 hour) by the bitcoin network.
 
 ## Usage
 
-* When a shopper chooses the Bitcoin payment method, they will be presented with
-  an order summary as the next step (prices are shown in whatever currency
-  they've selected for shopping).
-* Here, the shopper can either pay to the one-time-use address given, scan the
-  QR code to pay, or use the Pay With Bitcoin button if they're using a
-  URI-compatible wallet.
+When a client chooses the BitPay payment method, they will be presented with an invoice showing a button they will have to click on in order to pay their order.  Upon requesting to pay their order, the system takes the client to a full-screen bitpay.com invoice page where the client is presented with payment instructions.  Once payment is received, a link is presented to the shopper that will return them to your website.
 
-**Note:** This extension does not provide a means of automatically pulling a
-current BTC exchange rate for presenting BTC prices to shoppers.
+**NOTE:** Don't worry!  A payment will automatically update your Ubercart store whether or not the customer returns to your website after they've paid the invoice.
+
+**Note:** This extension does not provide a means of automatically pulling a current BTC exchange rate for presenting BTC prices to shoppers.
